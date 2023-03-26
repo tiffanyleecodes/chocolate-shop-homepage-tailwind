@@ -1,6 +1,6 @@
 # Chocolate Shop Home Page(Tailwind)
 
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://dimitrov-chocolate.onrender.com/)
 
 ### Overview
 
