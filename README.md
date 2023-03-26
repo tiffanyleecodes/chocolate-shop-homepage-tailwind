@@ -12,7 +12,7 @@
 
 ### Screenshot
 
-![](./src/image/screenshot.png)
+![](./dist/image/screenshot.png)
 
 ### Links
 
