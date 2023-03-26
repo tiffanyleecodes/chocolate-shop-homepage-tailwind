@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="flex justify-center align-middle h-auto w-full font-fair">
+    <div class="wrapper w-full">
+      <header class="flex justify-between align-middle m-0 p-4">
+        <!-- mobile menu -->
+        <div
+          class="mobileMenu -translate-x-full fixed top-0 left-0 duration-700 bg-white h-full w-4/5 py-10 px-6"
+        >
+          <div class="flex justify-between align-top">
+            <img src="./image/logo.png" alt="" />
+            <button class="w-10 h-10">
+              <img src="./image/close-svgrepo-com.svg" alt="" class="close" />
+            </button>
+          </div>
+          <div class="py-8 px-4 text-brown">
+            <ul class="text-2xl font-semibold">
+              <li class=""><a href="#">Features</a></li>
+              <hr class="my-8" />
+              <li class=""><a href="#">Best Gift</a></li>
+              <hr class="my-8" />
+              <li class=""><a href="#">Easter Chocolate</a></li>
+              <hr class="my-8" />
+              <li class=""><a href="#">About Us</a></li>
+              <hr class="my-8" />
+              <li class=""><a href="#">Find Location</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!--  -->
+        <button class="open desktop:hidden">
+          <img src="./image/menu-svgrepo-com.svg" alt="" class="w-8" />
+        </button>
+
+        <img src="./image/logo.png" alt="" class="w-40" />
+
+        <div
+          class="text-brown desktop:flex desktop:align-middle desktop:justify-between desktop:gap-x-6"
+        >
+          <ul
+            class="text-lg hidden desktop:flex desktop:align-middle desktop:gap-x-6 desktop:pt-2 desktop:pr-8"
+          >
+            <li class="hover: hover:underline">
+              <a href="#">Features</a>
+            </li>
+            <li class="hover: hover:underline"><a href="#">Best Gift</a></li>
+            <li class="hover: hover:underline"><a href="#">Easter</a></li>
+            <li class="hover: hover:underline"><a href="#">About Us</a></li>
+          </ul>
+          <!-- shopping cart -->
+          <div
+            class="cartContent fixed bg-white p-4 top-0 right-0 translate-x-full duration-700 w-4/5 h-full desktop:w-2/5"
+          >
+            <div class="flex justify-between align-middle py-6">
+              <button class="cartClose w-8 h-8">
+                <img src="./image/close-svgrepo-com.svg" alt="" />
+              </button>
+              <h2 class="text-lg font-semibold">My Cart</h2>
+              <a href="#" class="underline">Checkout</a>
+            </div>
+
+            <hr />
+            <div class="py-6 px-6 text-center text-brown">
+              <p class="font-bold text-xl">Your cart is empty</p>
+              <p class="my-4">
+                Your cart is lonely and waiting for you to add something.
+              </p>
+              <button
+                class="border-2 border-brown w-4/6 mt-10 py-2 bg-brown text-white tracking-widest hover:text-brown hover:bg-transparent desktop:w-2/5"
+              >
+                Start Shopping
+              </button>
+            </div>
+          </div>
+          <button>
+            <img
+              src="./image/cart-svgrepo-com.svg"
+              alt=""
+              class="w-8 h-8 cursor-pointer cartIcon"
+            />
+          </button>
+        </div>
+      </header>
+      <main>
+        <div
+          class="banner w-full bg-no-repeat bg-cover py-24 px-8 flex flex-col justify-center align-middle desktop:py-56 desktop:text-center"
+          style="background-image: url(./image/background.png)"
+        >
+          <h1 class="mainTitle text-3xl font-bold text-white leading-relaxed">
+            Treat Yourself to <br class="hidden desktop:block" />
+            the Finest Artisanal Chocolates
+          </h1>
+          <button
+            type="button"
+            class="border-2 border-white w-3/5 mt-10 py-1 bg-white text-brown tracking-widest hover:text-white desktop:hover:bg-transparent desktop:m-auto desktop:w-1/6 desktop:my-10"
+          >
+            SEE MORE
+          </button>
+        </div>
+
+        <!-- features -->
+        <div
+          class="text-center bg-lightGray py-16 flex justify-center flex-col px-4 desktop:px-6"
+        >
+          <h2 class="text-3xl font-bold mb-6 text-brown">Featured Products</h2>
+          <p class="text-brown mb-3">
+            Discover the Irresistible Features of Our Products!
+          </p>
+          <!-- chocolate bar -->
+          <div class="desktop:grid desktop:grid-cols-4 desktop:gap-4">
+            <a href="#"
+              ><div
+                class="bg-cover my-3 cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-95"
+                style="
+                  background-image: url(./image/craiyon_180232_chocolate_bar.png);
+                "
+              >
+                <div
+                  class="w-full h-full py-40 bg-brown bg-opacity-30 hover:bg-opacity-50"
+                >
+                  <h3 class="text-2xl font-bold text-white uppercase">
+                    Chocolate Bars
+                  </h3>
+                </div>
+              </div></a
+            >
+
+            <!-- Truffle  -->
+            <a href="#">
+              <div
+                class="bg-cover my-3 cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-95"
+                style="
+                  background-image: url(./image/DALL·E\ 2023-03-23\ 18.05.27\ -\ truffle\ chocolate\ .png);
+                "
+              >
+                <div
+                  class="w-full h-full py-40 bg-brown bg-opacity-30 hover:bg-opacity-50"
+                >
+                  <h3 class="text-2xl font-bold text-white uppercase">
+                    Truffle Chocolate
+                  </h3>
+                </div>
+              </div>
+            </a>
+
+            <!-- white chocolate -->
+            <a href="#">
+              <div
+                class="bg-cover my-3 cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-95"
+                style="
+                  background-image: url(./image/DALL·E\ 2023-03-23\ 18.06.12\ -\ white\ chocolate\ .png);
+                "
+              >
+                <div
+                  class="w-full h-full py-40 bg-brown bg-opacity-30 hover:bg-opacity-50"
+                >
+                  <h3 class="text-2xl font-bold text-white uppercase">
+                    White Chocolate
+                  </h3>
+                </div>
+              </div>
+            </a>
+
+            <!--flavoured   -->
+            <a href="#">
+              <div
+                class="bg-cover my-3 cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-95"
+                style="
+                  background-image: url(./image/craiyon_180409_truffle_chocolate_.png);
+                "
+              >
+                <div
+                  class="w-full h-full py-40 bg-brown bg-opacity-30 hover:bg-opacity-50"
+                >
+                  <h3 class="text-2xl font-bold text-white uppercase">
+                    Assortments
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            class="border-2 bg-brown border-brown text-white w-3/5 mx-auto py-1 px-2 my-6 hover:bg-transparent hover:text-brown desktop:hidden"
+          >
+            Get What You Like
+          </button>
+        </div>
+        <!-- easter bunny -->
+        <div
+          class="pb-12 desktop:grid desktop:grid-flow-col desktop:grid-cols-2 desktop:pb-0"
+        >
+          <img
+            src="./image/DALL·E 2023-03-24 08.54.33 - easter chocolate.png"
+            alt=""
+            class="desktop:h-128 w-full object-cover"
+          />
+          <div class="py-10 text-center px-10 desktop:m-auto desktop:px-24">
+            <h4 class="text-3xl font-bold text-brown">Easter is here</h4>
+            <p class="my-4 text-brown desktop:leading-8">
+              Easter chocolate is a wonderful way to celebrate the holiday with
+              friends and family. Enjoy the sweet and delicious taste of
+              chocolate bunnies, eggs, and other festive treats.
+            </p>
+            <button
+              type="button"
+              class="border-2 border-brown text-white bg-brown w-4/6 mx-auto py-1 px-2 mt-3 hover:bg-transparent hover:text-brown desktop:w-2/5"
+            >
+              Find Your Eggs
+            </button>
+          </div>
+        </div>
+
+        <!-- gift -->
+        <div
+          class="bg-lightGray text-center flex flex-col align-middle justify-center py-16 desktop:px-4"
+        >
+          <h5 class="text-3xl font-bold my-5 text-brown">Best Gifts</h5>
+          <p class="px-4 mb-5 text-brown">
+            Indulge in Sweet Delights: A Collection of Exquisite Chocolates for
+            Every Occasion
+          </p>
+          <div
+            class="grid grid-cols-2 gap-8 px-4 my-8 desktop:grid-cols-6 desktop:gap-4"
+          >
+            <div>
+              <div class="">
+                <a href="#">
+                  <img
+                    src="./image/DALL·E 2023-03-23 18.08.37 - seasalt chocolate.png"
+                    alt=""
+                    class="object-cover rounded-full transition ease-in-out delay-150 duration-300 hover:scale-90 hover:opacity-80"
+                /></a>
+              </div>
+
+              <h6 class="my-3 mb-68 text-1xl text-brown">Seasalt Chocolate</h6>
+            </div>
+            <!--  -->
+            <div>
+              <a href="#">
+                <img
+                  src="./image/dark_chocolate_1200x750-7c14e9eb43f38f61c7f66f2beb75903f.jpg"
+                  alt=""
+                  class="object-cover rounded-full transition ease-in-out delay-150 duration-300 hover:scale-90 hover:opacity-80"
+              /></a>
+
+              <h6 class="my-3 mb-6 text-1xl text-brown">Mint Chocolate</h6>
+            </div>
+            <!--  -->
+            <div>
+              <a href="#"
+                ><img
+                  src="./image/rt10242_19-exquisite-chocolate-desserts-for-your-guests@2x.jpg"
+                  alt=""
+                  class="object-cover rounded-full transition ease-in-out delay-150 duration-300 hover:scale-90 hover:opacity-80"
+              /></a>
+
+              <h6 class="my-3 mb-6 text-1xl text-brown">Orange Chocolate</h6>
+            </div>
+            <!--  -->
+            <div>
+              <a href="#">
+                <img
+                  src="./image/chocolate-covered-strawberries-3.jpg"
+                  alt=""
+                  class="object-cover rounded-full transition ease-in-out delay-150 duration-300 hover:scale-90 hover:opacity-80"
+              /></a>
+
+              <h6 class="my-3 mb-6 text-1xl text-brown">
+                Strawberry Chocolate
+              </h6>
+            </div>
+            <!--  -->
+            <div>
+              <a href="#"
+                ><img
+                  src="./image/Chocolate-Hazelnut-Energy-Balls-14.jpg"
+                  alt=""
+                  class="object-cover rounded-full transition ease-in-out delay-150 duration-300 hover:scale-90 hover:opacity-80"
+              /></a>
+
+              <h6 class="my-3 mb-6 text-1xl text-brown">Hazelnut Chocolate</h6>
+            </div>
+            <!--  -->
+            <div>
+              <a href="#"
+                ><img
+                  src="./image/dark_chocolates.jpg"
+                  alt=""
+                  class="object-cover rounded-full transition ease-in-out delay-150 duration-300 hover:scale-90 hover:opacity-80"
+              /></a>
+
+              <h6 class="my-3 mb-6 text-1xl text-brown">Seashell Chocolate</h6>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="border-2 border-brown text-white bg-brown w-3/5 mx-auto py-1 px-2 my-2 hover:bg-transparent hover:text-brown desktop:w-1/5"
+          >
+            Shop All Products
+          </button>
+        </div>
+        <!-- why choose us  -->
+        <div class="text-center py-16">
+          <h6 class="my-3 text-2xl font-bold text-brown">Why Choose Us?</h6>
+          <p class="px-8 opacity-80 leading-6 text-brown">
+            Unwrap the Difference: Discover What Sets Our Chocolate Shop Apart
+            from the Rest
+          </p>
+          <div
+            class="px-4 py-6 desktop:grid desktop:grid-flow-col desktop:grid-cols-3 desktop:gap-6 desktop:px-8"
+          >
+            <!-- 1 -->
+            <div
+              class="bg-pink text-center px-8 py-16 rounded-md desktop:m-auto desktop:py-20"
+            >
+              <img
+                src="./image/thumbs-up-svgrepo-com.svg"
+                alt=""
+                class="h-16 mx-auto"
+              />
+              <h6 class="text-3xl font-bold text-slate-50 my-4 text-white">
+                Best Quality
+              </h6>
+              <p class="text-slate-50 text-sm leading-7 text-white">
+                Crafted with Care: Decadent Chocolate Treats Made with Premium
+                Ingredients
+              </p>
+            </div>
+            <!-- 2 -->
+            <div
+              class="my-6 px-8 py-16 rounded-md bg-pink desktop:m-auto desktop:py-20"
+            >
+              <img
+                src="./image/snowflake-winter-xmas-2-svgrepo-com.svg"
+                alt=""
+                class="h-16 mx-auto"
+              />
+              <h6 class="text-3xl font-bold text-slate-50 my-4 text-white">
+                Cooler Pack
+              </h6>
+              <p class="text-slate-50 text-sm leading-7 text-white">
+                Chill Out with our Chocolate: Gourmet Treats Packed to
+                Perfection for a Cool and Fresh Delivery
+              </p>
+            </div>
+            <!-- 3 -->
+            <div
+              class="bg-pink px-8 py-16 rounded-md desktop:m-auto desktop:py-20"
+            >
+              <img
+                src="./image/truck-svgrepo-com.svg"
+                alt=""
+                class="h-16 mx-auto"
+              />
+              <h6 class="text-3xl font-bold text-slate-50 my-4 text-white">
+                Free Shipping
+              </h6>
+              <p class="text-sm leading-7 text-white">
+                Enjoy the Sweet Taste of Luxury with Free Shipping Across
+                Australia
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="bg-mocha text-white text-center px-4">
+        <!-- SIGN UP -->
+        <div
+          class="signUp px-6 py-16 desktop:grid desktop:gap-4 desktop:grid-flow-col desktop:grid-cols-2"
+        >
+          <div class="desktop:text-left">
+            <h7 class="text-2xl font-bold">Don't miss out on the chance</h7>
+            <p class="my-4 leading-6 opacity-80">
+              Sign up for our chocolate shop's newsletter to stay up-to-date on
+              our latest creations
+            </p>
+          </div>
+
+          <div class="desktop:text-left">
+            <div class="desktop:flex desktop:gap-4">
+              <input
+                type="name"
+                name="name"
+                placeholder="First Name"
+                class="w-full my-4 py-1 px-2 rounded-md desktop:w-auto desktop:my-0"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                class="w-full py-1 px-2 rounded-md desktop:w-auto desktop:my-0"
+              />
+              <button
+                type="button"
+                class="hidden border-2 border-white bg-white text-mocha py-2 px-2 w-full rounded-md hover:bg-white hover:text-mocha hover:opacity-75 desktop:block"
+              >
+                Join Today
+              </button>
+            </div>
+
+            <p class="my-4 text-sm desktop:my-2">
+              By signing up, you agree to our
+              <a href="#" class="underline text-sm">Terms & Conditions</a> and
+              <a href="#" class="underline text-sm">Privacy Policy</a>.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            class="border-2 border-white text-white py-2 px-2 w-full rounded-md hover:bg-white hover:text-brown desktop:hidden"
+          >
+            Join Today
+          </button>
+        </div>
+
+        <!-- INFORMATION -->
+        <div
+          class="pb-2 desktop:flex desktop:justify-between desktop:align-top desktop:px-6"
+        >
+          <div class="desktop:flex desktop:justify-between desktop:align-top">
+            <ul
+              class="desktop:flex desktop:justify-between desktop:align-top desktop:gap-7"
+            >
+              <li>
+                <a
+                  href="# "
+                  class="text-xl pb-1 hover:border-b-2 hover: hover:border-white"
+                  >Home</a
+                >
+              </li>
+              <li class="my-6 desktop:my-0">
+                <a
+                  href="#"
+                  class="text-xl pb-1 hover:border-b-2 hover: hover:border-white"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl pb-1 hover:border-b-2 hover: hover:border-white"
+                  >Shipping & Return</a
+                >
+              </li>
+              <li class="my-6 desktop:my-0">
+                <a
+                  href="#"
+                  class="text-xl pb-1 hover:border-b-2 hover: hover:border-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="icon flex justify-center align-middle gap-4 my-2">
+            <a href="">
+              <img
+                src="./image/facebook-svgrepo-com (1).svg"
+                alt=""
+                class="h-8 w-8 pb-1 hover:border-b-2 hover: hover:border-white"
+            /></a>
+            <a href="">
+              <img
+                src="./image/instagram-svgrepo-com.svg"
+                alt=""
+                class="h-8 w-6 pb-1 hover:border-b-2 hover: hover:border-white"
+            /></a>
+            <a href="">
+              <img
+                src="./image/line-svgrepo-com.svg"
+                alt=""
+                class="h-8 w-8 pb-1 hover:border-b-2 hover:border-white"
+            /></a>
+            <a href="">
+              <img
+                src="./image/pinterest-alt-svgrepo-com.svg"
+                alt=""
+                class="h-8 w-6 pb-1 hover:border-b-2 hover: hover:border-white"
+            /></a>
+          </div>
+        </div>
+        <p class="desktop:text-right text-sm opacity-75 pb-2">
+          © Drimitrov Chocolate 2023
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
